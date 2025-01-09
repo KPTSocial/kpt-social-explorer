@@ -61,24 +61,21 @@
 
 @keyframes neon-glow {
   0% {
-    background-color: #8B5CF6;
     box-shadow: 0 0 10px #8B5CF6, 0 0 20px #8B5CF6, 0 0 30px #8B5CF6;
   }
   33% {
-    background-color: #D946EF;
     box-shadow: 0 0 10px #D946EF, 0 0 20px #D946EF, 0 0 30px #D946EF;
   }
   66% {
-    background-color: #F97316;
     box-shadow: 0 0 10px #F97316, 0 0 20px #F97316, 0 0 30px #F97316;
   }
   100% {
-    background-color: #0EA5E9;
     box-shadow: 0 0 10px #0EA5E9, 0 0 20px #0EA5E9, 0 0 30px #0EA5E9;
   }
 }
 
 .neon-button {
+  @apply bg-black;
   animation: neon-glow 4s infinite;
   transition: all 0.3s ease;
 }
