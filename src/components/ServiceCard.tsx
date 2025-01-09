@@ -26,10 +26,10 @@ export function ServiceCard({
   const [isExpanded, setIsExpanded] = useState(false);
 
   return (
-    <div className="service-card">
+    <div className="service-card bg-white/80 backdrop-blur-sm">
       <div className="flex justify-between items-start mb-4">
         <div>
-          <h3 className="text-xl font-semibold mb-2">{title}</h3>
+          <h3 className="text-xl font-semibold mb-2 text-[#2D3748]">{title}</h3>
           <p className="text-sm text-blue-600 font-medium">{duration}</p>
         </div>
         <Button
@@ -42,7 +42,7 @@ export function ServiceCard({
         </Button>
       </div>
       
-      <p className="text-gray-600 mb-4">{description}</p>
+      <p className="text-[#4A5568] mb-4">{description}</p>
       
       <div
         className={cn(
@@ -52,7 +52,7 @@ export function ServiceCard({
       >
         <ul className="space-y-2">
           {features.map((feature, index) => (
-            <li key={index} className="flex items-center text-sm text-gray-600">
+            <li key={index} className="flex items-center text-sm text-[#4A5568]">
               <span className="mr-2 h-1.5 w-1.5 rounded-full bg-blue-600" />
               {feature}
             </li>
@@ -65,7 +65,7 @@ export function ServiceCard({
           buttons.map((button, index) => (
             <Button
               key={index}
-              className="w-full"
+              className="w-full hover-bounce"
               variant="outline"
               onClick={() => window.open(button.url, '_blank')}
             >
@@ -73,7 +73,7 @@ export function ServiceCard({
             </Button>
           ))
         ) : buttonText && (
-          <Button className="w-full" variant="outline">
+          <Button className="w-full hover-bounce" variant="outline">
             {buttonText}
           </Button>
         )}
