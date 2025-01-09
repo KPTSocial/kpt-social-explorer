@@ -13,7 +13,16 @@ const Index = () => {
         "Digital presence analysis",
         "Custom action plan creation"
       ],
-      buttonText: "Schedule 60-Minute Session"
+      buttons: [
+        {
+          text: "Schedule Branding & Strategy Session",
+          url: "https://api.leadconnectorhq.com/widget/booking/6iVhUwcCFFzLyYhQ6vgC"
+        },
+        {
+          text: "Schedule Website Build Session",
+          url: "https://api.leadconnectorhq.com/widget/booking/KVsRG5NHq2da8TmeJQQR"
+        }
+      ]
     },
     {
       title: "Brand Boost Essentials",

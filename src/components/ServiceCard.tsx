@@ -8,10 +8,21 @@ interface ServiceCardProps {
   duration: string;
   description: string;
   features: string[];
-  buttonText: string;
+  buttons?: {
+    text: string;
+    url: string;
+  }[];
+  buttonText?: string;
 }
 
-export function ServiceCard({ title, duration, description, features, buttonText }: ServiceCardProps) {
+export function ServiceCard({ 
+  title, 
+  duration, 
+  description, 
+  features, 
+  buttons,
+  buttonText 
+}: ServiceCardProps) {
   const [isExpanded, setIsExpanded] = useState(false);
 
   return (
@@ -49,9 +60,24 @@ export function ServiceCard({ title, duration, description, features, buttonText
         </ul>
       </div>
 
-      <Button className="w-full mt-4" variant="outline">
-        {buttonText}
-      </Button>
+      <div className="mt-4 space-y-2">
+        {buttons ? (
+          buttons.map((button, index) => (
+            <Button
+              key={index}
+              className="w-full"
+              variant="outline"
+              onClick={() => window.open(button.url, '_blank')}
+            >
+              {button.text}
+            </Button>
+          ))
+        ) : buttonText && (
+          <Button className="w-full" variant="outline">
+            {buttonText}
+          </Button>
+        )}
+      </div>
     </div>
   );
 }
