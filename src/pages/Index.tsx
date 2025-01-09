@@ -63,7 +63,12 @@ const Index = () => {
         "Quick business optimization tips",
         "Immediate action items"
       ],
-      buttonText: "Schedule 30-Minute Session"
+      buttons: [
+        {
+          text: "Schedule Business Coaching Session",
+          url: "https://api.leadconnectorhq.com/widget/booking/mRw6YVO1i13Lzovbia59"
+        }
+      ]
     }
   ];
 
