@@ -81,13 +81,13 @@ const Index = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
       <div className="max-w-6xl mx-auto px-4 py-16 sm:px-6 lg:px-8">
         <div className="text-center mb-16 animate-fade-in">
-          <h1 className="text-4xl font-bold text-secondary sm:text-5xl mb-4">
+          <h1 className="text-4xl font-bold text-gray-900 sm:text-5xl mb-4">
             Welcome to KPT Social
           </h1>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
             Tailored Solutions for Your Business Needs
           </p>
         </div>
@@ -101,7 +101,7 @@ const Index = () => {
         </div>
 
         <div className="text-center animate-fade-in" style={{ animationDelay: "0.6s" }}>
-          <Button size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground">
+          <Button size="lg" className="bg-blue-600 hover:bg-blue-700">
             Explore All Services
           </Button>
         </div>
