@@ -34,7 +34,24 @@ const Index = () => {
         "Social media growth tactics",
         "Sales funnel optimization"
       ],
-      buttonText: "Schedule 45-Minute Session"
+      buttons: [
+        {
+          text: "Schedule Automation & API Session",
+          url: "https://api.leadconnectorhq.com/widget/booking/6RIo398EQ5iSLQNIqD8n"
+        },
+        {
+          text: "Schedule Social Media Session",
+          url: "https://api.leadconnectorhq.com/widget/booking/GU752UAzxv0UkdyoejDU"
+        },
+        {
+          text: "Schedule Funnel & Pipeline Session",
+          url: "https://api.leadconnectorhq.com/widget/booking/XsiEXJ0pAJmfD7yFhB2Y"
+        },
+        {
+          text: "Schedule Digital Advertising Session",
+          url: "https://api.leadconnectorhq.com/widget/booking/gOm0KC2dKU7aKWs5LViU"
+        }
+      ]
     },
     {
       title: "Quick Impact Session",
