@@ -61,71 +61,28 @@
 
 @keyframes neon-glow {
   0% {
-    box-shadow: 
-      0 0 20px #8B5CF6,
-      -10px 0 20px #8B5CF6,
-      -10px -10px 20px #D946EF,
-      0 -10px 20px #D946EF,
-      10px -10px 20px #F97316,
-      10px 0 20px #F97316,
-      10px 10px 20px #0EA5E9,
-      0 10px 20px #0EA5E9;
+    box-shadow: 0 0 10px #8B5CF6, 0 0 20px #8B5CF6, 0 0 30px #8B5CF6;
   }
-  25% {
-    box-shadow: 
-      -10px 0 20px #8B5CF6,
-      -10px -10px 20px #8B5CF6,
-      0 -10px 20px #D946EF,
-      10px -10px 20px #D946EF,
-      10px 0 20px #F97316,
-      10px 10px 20px #F97316,
-      0 10px 20px #0EA5E9,
-      -10px 10px 20px #0EA5E9;
+  33% {
+    box-shadow: 0 0 10px #D946EF, 0 0 20px #D946EF, 0 0 30px #D946EF;
   }
-  50% {
-    box-shadow: 
-      -10px -10px 20px #8B5CF6,
-      0 -10px 20px #8B5CF6,
-      10px -10px 20px #D946EF,
-      10px 0 20px #D946EF,
-      10px 10px 20px #F97316,
-      0 10px 20px #F97316,
-      -10px 10px 20px #0EA5E9,
-      -10px 0 20px #0EA5E9;
-  }
-  75% {
-    box-shadow: 
-      0 -10px 20px #8B5CF6,
-      10px -10px 20px #8B5CF6,
-      10px 0 20px #D946EF,
-      10px 10px 20px #D946EF,
-      0 10px 20px #F97316,
-      -10px 10px 20px #F97316,
-      -10px 0 20px #0EA5E9,
-      0 0 20px #0EA5E9;
+  66% {
+    box-shadow: 0 0 10px #F97316, 0 0 20px #F97316, 0 0 30px #F97316;
   }
   100% {
-    box-shadow: 
-      0 0 20px #8B5CF6,
-      -10px 0 20px #8B5CF6,
-      -10px -10px 20px #D946EF,
-      0 -10px 20px #D946EF,
-      10px -10px 20px #F97316,
-      10px 0 20px #F97316,
-      10px 10px 20px #0EA5E9,
-      0 10px 20px #0EA5E9;
+    box-shadow: 0 0 10px #0EA5E9, 0 0 20px #0EA5E9, 0 0 30px #0EA5E9;
   }
 }
 
 .neon-button {
   @apply bg-black;
-  animation: neon-glow 4s linear infinite;
+  animation: neon-glow 4s infinite;
   transition: all 0.3s ease;
 }
 
 .neon-button:hover {
   transform: scale(1.05);
-  animation: neon-glow 2s linear infinite;
+  animation: neon-glow 2s infinite;
 }
 
 @keyframes bounce-hover {
