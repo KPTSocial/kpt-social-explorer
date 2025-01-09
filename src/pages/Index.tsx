@@ -101,8 +101,11 @@ const Index = () => {
         </div>
 
         <div className="text-center animate-fade-in" style={{ animationDelay: "0.6s" }}>
-          <Button size="lg" className="bg-blue-600 hover:bg-blue-700 hover-bounce">
-            Explore All Services
+          <Button 
+            size="lg" 
+            className="neon-button text-white font-bold hover-bounce"
+          >
+            Unlock Exclusive Offers
           </Button>
         </div>
       </div>
